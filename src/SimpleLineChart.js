@@ -47,10 +47,10 @@ export default function SimpleLineChart() {
 
     return (
         <div>
-            <div {...getRootProps()} id='btn'>
+            <div id='btn'>
                 <input {...getInputProps()} />
-                <button>Upload File</button>
-                            </div>
+                <button {...getRootProps()}>Upload File</button>
+            </div>
             <LineChart
                 width={500}
                 height={300}
